@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OANSH Media Hub | Home</title>
+    <link rel="preload" href="font/icons/bootstrap-icons.css" as="style">
+    <link rel="preload" href="css/fontstyle.css" as="style">
+    <link rel="preload" href="css/layout.css" as="style">
+    <link rel="preload" href="css/animation.css" as="style">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="font/icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/fontstyle.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/underdevelopment.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="imgs/favicon.png">
+</head>
+<body>
+    <span class="fade"></span>
+    <main>
+        <!-- HEADER START-->
+        <section class="hero-banner">
+            <!--UNDERDEVELOPMENT SECTION START-->
+            <div class="under-development">
+                <p> WEBSITE UNDER DEVELOPMENT</p>
+                <p>Completion Date: <span id="countdown"></span></p>
+                <script>
+                    var countDownDate = new Date("Oct 01, 2024 00:00:00").getTime();
+                    var x = setInterval(function() {
+                      var now = new Date().getTime();
+                      var distance = countDownDate - now;
+                      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                      + minutes + "m " + seconds + "s ";
+                      if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("countdown").innerHTML = "!!!COMING SOON!!!";
+                      }
+                    }, 1000);
+                </script>
+            </div>
+            <!--UNDERDEVELOPMENT SECTION END-->
+            <div class="hero-contained">
+                <div class="hero-title fc-white">
+                    <h1 class="ff-damion">Media Hub</h1>
+                    <p class="fs-h4 fw-normal">
+                        Oshwal Academy Nairobi - Senior High Media Club's Website
+                        More description
+                    </p>
+                    <a href="#about" class="btn-bg2 border-round mt-20">
+                        Learn More <i class="bi bi-chevron-compact-right"></i>
+                    </a>
+                </div>
+            </div>
+            <!--SOCIALS START-->
+            <div class="hero-socials">
+                <a href="https://www.facebook.com/oshwalacademynairobiofficial/" class="mt-a icon-link" aria-label="Follow us on facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/oshwalacademynairobi/?hl=en" class="icon-link mt-10" aria-label="Follow us on instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@OshwalAcademyNairobi" class="icon-link mt-10" aria-label="Follow us on youtube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+            <!--SOCIALS END-->
+        </section>
+        <!-- HEADER END-->
+        <!-- NAVIGATION START-->
+        <nav>
+            <div class="contained">
+                <a href="index.html" class="logo fc-primary ff-damion row flex-alig-center">
+                    <span class="fs-h2">Media Hub</span>
+                </a>
+                <input type="checkbox" name="tablet-mobile-menu" class="tab-mob-menu" aria-label="tablet and mobile menu">
+                <div class="navigation-container">
+                    <a href="index.html">Home</a>
+                    <a href="html/about.html">About</a>
+                    <a href="html/events/events.html">Events</a>
+                    <a href="html/blog/blog.html">Blog</a>
+                    <a href="html/gallery/gallery.html">Gallery</a>
+                    <a href="html/archives/archives.html">Archives</a>
+                    <a href="html/contact.html" class="btn-bg1 border-round">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+        <a href="#" class="btn-back-to-top" aria-label="Back to top button">
+            <i class="bi bi-chevron-up"></i>
+        </a>
+        <!-- NAVIGATION END -->
+        <!-- ABOUT SECTION START -->
+        <section class="contained row" id="about">
+            <h2 class="section-title ff-damion">About us</h2>
+            <div class="col-balance">
+                <span class="fc-primary fs-h2">
+                    SHORT WHAT YOU ARE
+                </span>
+                <p>
+                    Details
+                </p>
+                <p>
+                    Motto and Vision
+                </p>
+                <p>
+                    Goals
+                </p>
+                <p>
+                    That Stuff
+                </p>
+                <a href="html/about.html" class="btn-bg1 mt-25 border-round">Find Out More</a>
+            </div>
+            <div class="col-balance">
+                <div class="sticky-img-dual">
+                    <img src="imgs/hero1.webp" alt="">
+                    <img src="imgs/hero2.webp" alt="">
+                </div>
+            </div>
+            <div class="sticky-img-dual-spacer"></div>
+        </section>
+        <!-- ABOUT SECTION END -->
+        <!-- WHAT WE DO SECTION START -->
+        <section class="bg-primary-foot ta-center">
+            <h2 class="section-title ff-damion bg-primary-foot">What we do</h2>
+            <div class="contained">
+                <p class="col-wide mlmr-a">
+                    some text explaining what we do
+                </p>
+            </div>
+            <div class="contained row flex-just-center">
+                <div class="col-full">
+                    <hr>
+                </div>
+                <div class="col-tri">
+                    <i class="bi bi-stars fs-h2"></i>
+                    <h3 class="mt-10 ff-damion">Photography</h3>
+                    <p>
+                        Describe Photography
+                    </p>
+                </div>
+                <div class="col-tri">
+                    <i class="bi bi-diagram-3 fs-h2"></i>
+                    <h3 class="mt-10 ff-damion">Events</h3>
+                    <p>
+                        Describe Events
+                    </p>
+                </div>
+                <div class="col-tri">
+                    <i class="bi bi-code-slash fs-h2"></i>
+                    <h3 class="mt-10 ff-damion">Coding</h3>
+                    <p>
+                        Desctibe Coding
+                    </p>
+                </div>
+            </div>
+            <a href="html/events/events.html" class="btn-bg2 border-round mt-25">
+                View our events
+            </a>
+            <p>Feel Free to Change it up</p>
+        </section>
+        <!-- WHAT WE DO SECTION END -->
+        <!-- BLOGS SECTION START -->
+        <section class="contained">
+            <h2 class="section-title ff-damion">Featured Blogs</h2>
+            <p class="ta-center col-wide mlmr-a">
+                Stay informed about our blogs, some random blog for example, make people write and let people know whats happening
+            </p>
+            <div class="row flex-just-center">
+                <div class="col-tri">
+                    <article class="card-blog">
+                        <img src="imgs/work1.webp" alt="">
+                        <div class="info">
+                            <h3 class="mt-5 mb-5 ff-damion fc-primary">Title</h3>
+                            <p class="ml-a mt-5">01/01/2024</p>
+                        </div>
+                        <p class="ml-10 mt-5 mb-20">
+                            Description
+                        </p>
+                        <a href="html/blog/blog-1.html" class="ml-10">
+                            Read blog <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </article>
+                </div>
+        </section>
+        <!-- BLOGS SECTION END -->
+        <!-- GET IN TOUCH SECTION START -->
+        <section class="subscribe bg-primary-foot" style="background-image: url('imgs/overlay.webp'); text-align: center;">
+            <h2 class="section-title ff-damion">Reach us</h2>
+            <p class="col-wide mlmr-a">
+                Some text that would compel the user to hit that contact button if what the user have seen above
+                is not enough
+            </p>
+            <a href="html/contact.html" class="btn-bg1 border-round mt-25">
+                Get in touch
+            </a>
+        </section>
+        <!-- GET IN TOUCH SECTION END -->
+    </main>
+        <!-- FOOTER START -->
+    <footer class="fc-white">
+        <div class="contained row flex-just-center">
+            <!-- FOOTER WEBSITE MOTO START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">Oshwal Academy Nairobi Senior High - Media Hub</h3>
+                <p>
+                    Our mission is your vision and your mission is to tell
+                    us your vision, so that what you envision will become our mission.
+                </p>
+                <p>
+                    i swear to go change everything then call me to check. You know, Fresh eyes
+                </p>
+            </div>
+            <!-- FOOTER WEBSITE MOTO END -->
+            <!-- FOOTER QUICK CONTACT START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">Get in touch</h3>
+                <a href="mailto:mediaclub.sh@gmail.com" class="display-block fc-white icon-link mt-10 mb-10">
+                    <i class="bi bi-envelope-fill"></i>
+                    mediaclub.sh@gmail.com
+                </a>
+                <a href="https://wa.me/+254716501262" class="display-block fc-white icon-link mt-10 mb-10">
+                    <i class="bi bi-telephone-fill"></i>
+                    +254 716 501262 [Mrithul]
+                </a>
+                <p class="display-block fc-white icon-link mt-10 mb-10">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    ICT Lab 
+                </p>
+                <a href="https://www.facebook.com/oshwalacademynairobiofficial/" class="display-inblock fc-white icon-link mt-20" aria-label="Follow on facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/oshwalacademynairobi/?hl=en" class="display-inblock fc-white icon-link" aria-label="Follow on instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@OshwalAcademyNairobi" class="display-inblock fc-white icon-link" aria-label="Follow on youtube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+            <!-- FOOTER QUICK CONTACT END -->
+            <!-- FOOTER CREDITS START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">Credits</h3>
+                <p>
+                    Me
+                </p>
+            </div>
+            <!-- FOOTER CREDITS END -->
+        </div>
+        <div class="copy ta-center fc-white">
+            <small>&copy; OANSH Media Hub- Copyright 2024<br>pls add more stuff to footer</small>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+</body>
+</html>

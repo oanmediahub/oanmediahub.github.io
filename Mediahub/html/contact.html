@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>OANSH Media Hub | Contact</title>
+    <link rel="preload" href="../font/icons/bootstrap-icons.css" as="style">
+    <link rel="preload" href="../css/fontstyle.css" as="style">
+    <link rel="preload" href="../css/layout.css" as="style">
+    <link rel="preload" href="../css/animation.css" as="style">
+    <link rel="preload" href="../css/style.css" as="style">
+    <link rel="stylesheet" href="../font/icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/fontstyle.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../imgs/favicon.png">
+</head>
+<body>
+    <span class="fade"></span>
+    <main>
+        <!-- HEADER START -->
+        <section class="sub-hero-banner" style="background-image: url('../imgs/hero2.webp');">
+            <div class="hero-contained">
+                <div class="hero-title fc-white">
+                    <h1 class="ff-damion">Media Hub | Contact us</h1>
+                    <a href="../index.html" class="fc-white">
+                        Home
+                    </a>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#" class="fc-white">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+            <!--SOCIALS START-->
+            <div class="hero-socials">
+                <a href="https://www.facebook.com/oshwalacademynairobiofficial/" class="mt-a icon-link" aria-label="Follow us on facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/oshwalacademynairobi/?hl=en" class="icon-link mt-10" aria-label="Follow us on instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@OshwalAcademyNairobi" class="icon-link mt-10" aria-label="Follow us on youtube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+            <!--SOCIALS END-->
+        </section>
+        <!-- HEADER END-->
+        <!-- NAVIGATION START-->
+        <nav>
+            <div class="contained">
+                <a href="../index.html" class="logo fc-primary ff-damion row flex-alig-center">
+                    <span class="fs-h2">Media Hub</span>
+                </a>
+                <input type="checkbox" name="tablet-mobile-menu" class="tab-mob-menu" aria-label="tablet and mobile menu">
+                <div class="navigation-container">
+                    <a href="../index.html">Home</a>
+                    <a href="../html/about.html">About</a>
+                    <a href="../html/events/events.html">Events</a>
+                    <a href="../html/blog/blog.html">Blog</a>
+                    <a href="../html/gallery/gallery.html">Gallery</a>
+                    <a href="../html/archives/archives.html">Archives</a>
+                    <a href="../html/contact.html" class="btn-bg1 border-round">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+        <a href="#" class="btn-back-to-top" aria-label="Back to top button">
+            <i class="bi bi-chevron-up"></i>
+        </a>
+        <!-- NAVIGATION END -->
+        <section class="contained">
+            <h2 class="section-title ff-damion">Get in touch</h2>
+            <p class="col-wide ta-center mlmr-a">
+                Some text that would compel the user to contact you if what the user have seen across the page
+                wasn't not enough.
+            </p>
+            <div class="row">
+                <div class="col-balance imgc">
+                <img src="https://www.dafont.com/img/illustration/s/o/something.jpg" alt="image">
+                </div>
+                <!-- CONTACT INFO START -->
+                <div class="col-balance">
+                    <span class="fs-h4 mb-15 mt-25 fc-primary">Where to go:</span>
+                    <a href="" class="display-inblock">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        ICT LAB B-2-10
+                    </a>                    
+                    <span class="fs-h4 mb-15 mt-25 fc-primary">Say hello:</span>
+                    <a href="mailto:mediaclub.sh@gmail.com" class="display-inblock">
+                        <i class="bi bi-envelope-fill"></i>
+                        mediaclub.sh@gmail.com
+                    </a><br><br>
+                    <a href="https://wa.me/+254716501262" class="display-inblock">
+                        <i class="bi bi-telephone-fill"></i>
+                        +254 716 501262
+                    </a>                       
+                    <form id="contact" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd_BSAFSSRS6XqvIdRHbiRL9OO4iOv1mCMkkfpou6auOfArkw/formResponse" method="POST" class="message-form mt-50 mb-25">
+                        <span class="fs-h4 fc-primary mb-15">Send us a message</span>
+                        <div class="row mb-20">
+                            <input type="text" name="entry.84670900" id="message-name" placeholder="Your name" aria-label="Input for your name" required>
+                            <input type="email" name="entry.2099551860" class="ml-a" id="message-email" placeholder="Your email" aria-label="Input for email" required>
+                        </div>
+                        <input type="text" entry.1318890989 id="message-subject" aria-label="Input for your message subject" class="mb-20" placeholder="Subject">
+                        <textarea id="message-message" name="entry.2013636152" rows="5" placeholder="Write a message" aria-label="Input for writing message"></textarea>
+                        <button type="submit" class="btn-bg1 border-round mt-20">Send message</button>
+                    </form>
+                    <div id="successMessage" style="display:none;">
+                        Your message has been received, we will get back to you as soon as possible!
+                    </div>
+                </div>
+                <!--SUBMIT MESSAGE SCRIPT START-->
+                <script>
+                    document.getElementById('contact').addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        const form = event.target;
+                        const formData = new FormData(form);
+                        fetch(form.action, {
+                            method: form.method,
+                            body: formData,
+                            mode: 'no-cors'
+                        }).then(() => {
+                            form.reset();
+                            document.getElementById('successMessage').style.display = 'block';
+                        }).catch(error => {
+                            console.error('Error!', error.message);
+                        });
+                    });
+                    </script>
+                    <!--SUBMIT MESSAGE SCRIPT END-->
+                <!-- CONTACT INFO END -->
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER START -->
+    <footer class="fc-white">
+        <div class="contained row flex-just-center">
+            <!-- FOOTER WEBSITE MOTO START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">Oshwal Academy Nairobi Senior High - Media Hub</h3>
+                <p>
+                    Our mission is your vision and your mission is to tell
+                    us your vision, so that what you envision will become our mission.
+                </p>
+                <p>
+                    i swear to go change everything then call me to check. You know, Fresh eyes
+                </p>
+            </div>
+            <!-- FOOTER WEBSITE MOTO END -->
+            <!-- FOOTER QUICK CONTACT START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">Get in touch</h3>
+                <a href="mailto:mediaclub.sh@gmail.com" class="display-block fc-white icon-link mt-10 mb-10">
+                    <i class="bi bi-envelope-fill"></i>
+                    mediaclub.sh@gmail.com
+                </a>
+                <a href="https://wa.me/+254716501262" class="display-block fc-white icon-link mt-10 mb-10">
+                    <i class="bi bi-telephone-fill"></i>
+                    +254 716 501262 [Mrithul]
+                </a>
+                <p class="display-block fc-white icon-link mt-10 mb-10">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    ICT Lab 
+                </p>
+                <a href="https://www.facebook.com/oshwalacademynairobiofficial/" class="display-inblock fc-white icon-link mt-20" aria-label="Follow on facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/oshwalacademynairobi/?hl=en" class="display-inblock fc-white icon-link" aria-label="Follow on instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@OshwalAcademyNairobi" class="display-inblock fc-white icon-link" aria-label="Follow on youtube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+            <!-- FOOTER QUICK CONTACT END -->
+            <!-- FOOTER CREDITS START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">Credits</h3>
+                <p>
+                    Me
+                </p>
+            </div>
+            <!-- FOOTER CREDITS END -->
+        </div>
+        <div class="copy ta-center fc-white">
+            <small>&copy; OANSH Media Hub- Copyright 2024<br>pls add more stuff to footer</small>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+</body>
+</html>
