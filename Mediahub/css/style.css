@@ -328,7 +328,7 @@ section.bg-primary-foot{
 .sticky-img,
 .sticky-img-dual{
     position: -webkit-sticky;
-    position: fixed;
+    position: absolute;
     top: 84px;
     height: 250px;
 }
