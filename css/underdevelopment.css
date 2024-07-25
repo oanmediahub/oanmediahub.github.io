@@ -1,0 +1,13 @@
+
+.under-development {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
