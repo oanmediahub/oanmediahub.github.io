@@ -1132,7 +1132,7 @@ label:hover{
 
     .tab-mob-menu:checked ~ .navigation-container{
         border-top: 1px solid var(--shadowColor);
-        height: 420px;
+        height: 520px;
     }
 
     .sticky-img-dual > .blob{
