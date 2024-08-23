@@ -1201,6 +1201,8 @@ label:hover{
            -moz-border-radius-topleft: 0;
                 border-top-left-radius: 0;
     }
+    #xyz{
+        display: none;
 }
 
 @media only screen and (max-height: 500px) {
