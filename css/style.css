@@ -1153,11 +1153,11 @@ label:hover{
 @media only screen and (max-width: 992px){
     :root{
         --h1TextSize: 100px;
-        --h2TextSize: 50px;
-        --h3TextSize: 50px;
+        --h2TextSize: 60px;
+        --h3TextSize: 20px;
         --h4TextSize: 30px;
         --h5TextSize: 30px;
-        --pTextSize: 30px;
+        --pTextSize: 20px;
         --smTextSize: 30px;
         
     
@@ -1203,6 +1203,7 @@ label:hover{
     }
     #xyz{
         display: none;
+    }
 }
 
 @media only screen and (max-height: 500px) {
