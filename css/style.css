@@ -78,7 +78,7 @@ h4, .fs-h4 { font-size: var(--h4TextSize); font-weight: bold; display: block; }
 h5, .fs-h5 { font-size: var(--h5TextSize); font-weight: bold; display: block; }
 p, .fs-p { font-size: var(--pTextSize); display: block; }
 li{ font-size: var(--pTextSize); }
-small { font-size: var(--smTextSize); }
+small { font-size: 12px; }
 .display-block{ display: block; }
 .display-inblock{ display: inline-block; }
 
