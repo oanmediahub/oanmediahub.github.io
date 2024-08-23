@@ -7,6 +7,7 @@
     --h5TextSize: 1em;
     --pTextSize: 1em;
     --smTextSize: 0.85em;
+    
 
     --shadowColor: #525f8014;
     --bgWhite : #ffffff;
@@ -727,7 +728,7 @@ a {
     position: relative;
     text-decoration: none;
     color: var(--textBlack);
-    font-size: var(--pTextSize);
+    font-size: var(--h4TextSize);
     -webkit-transform-origin: center;
        -moz-transform-origin: center;
         -ms-transform-origin: center;
@@ -1131,7 +1132,7 @@ label:hover{
 
     .tab-mob-menu:checked ~ .navigation-container{
         border-top: 1px solid var(--shadowColor);
-        height: 280px;
+        height: 420px;
     }
 
     .sticky-img-dual > .blob{
@@ -1149,32 +1150,35 @@ label:hover{
 }
 
 /* Mobile View */
-@media only screen and (max-width: 600px){
-    .sticky-img-dual{
-        width: 100%;
-        height: auto;
+@media only screen and (max-width: 992px){
+    :root{
+        --h1TextSize: 100px;
+        --h2TextSize: 50px;
+        --h3TextSize: 50px;
+        --h4TextSize: 30px;
+        --h5TextSize: 30px;
+        --pTextSize: 30px;
+        --smTextSize: 30px;
+        
+    
+        --shadowColor: #525f8014;
+        --bgWhite : #ffffff;
+        --bgBlack : #232527;
+    
+        --primaryColor : #324381;
+        --primaryBgBody : #ebeef4;
+        --primaryBgFoot : #272a31;
+    
+        --textWhite : #ffffff;
+        --textBlack : #212121;
+    
+        --selectionBg : #5a6282;
+        --selectionText : #eaecf4;
+    
+        --navHeight : 74px;
     }
-    .sticky-img-dual > img{
-        height: 250px;
-    }
-    .sticky-img-dual > img:first-child{
-        -webkit-transform: none;
-           -moz-transform: none;
-            -ms-transform: none;
-             -o-transform: none;
-                transform: none;
-    }
-    .sticky-img-dual > img:last-child{
-        position: unset;
-        -webkit-transform: none;
-           -moz-transform: none;
-            -ms-transform: none;
-             -o-transform: none;
-                transform: none;
-    }
-    .sticky-img-dual-spacer{
-        display: none;
-    }
+    
+    
     
     .message-form > .row > input{
         width: -webkit-calc(50% - 5px);
