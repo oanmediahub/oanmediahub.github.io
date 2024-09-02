@@ -22,27 +22,7 @@
         <!-- HEADER START-->
         <section class="hero-banner">
             <!--UNDERDEVELOPMENT SECTION START-->
-            <div class="under-development">
-                <p> WEBSITE UNDER DEVELOPMENT</p>
-                <p>Completion Date: <span id="countdown"></span></p>
-                <script>
-                    var countDownDate = new Date("Oct 01, 2024 00:00:00").getTime();
-                    var x = setInterval(function() {
-                      var now = new Date().getTime();
-                      var distance = countDownDate - now;
-                      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-                      + minutes + "m " + seconds + "s ";
-                      if (distance < 0) {
-                        clearInterval(x);
-                        document.getElementById("countdown").innerHTML = "!!!COMING SOON!!!";
-                      }
-                    }, 1000);
-                </script>
-            </div>
+            
             <!--UNDERDEVELOPMENT SECTION END-->
             <div class="hero-contained">
                 <div class="hero-title fc-white">
@@ -212,7 +192,8 @@ Our events center around engaging photography and coding competitions, offering 
                 <a href="mailto:mediaclub.sh@gmail.com" class="display-block fc-white icon-link mt-10 mb-10">
                     <i class="bi bi-envelope-fill"></i>
                     mediaclub.sh@gmail.com
-                </a>
+                </a>
+
                 <a href="" class="display-block fc-white icon-link mt-10 mb-10">
                     <i class="bi bi-geo-alt-fill"></i>
                     ICT LAB B-2-10
